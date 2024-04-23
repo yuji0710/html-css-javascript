@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        #dis
+        {
+         height: 200px;
+         width: 200px;
+         margin-left: 250px;
+         margin-top: 100px;
+         background-color: rgb(0, 0, 0);
+         font-size:200px;
+      
+         align-items: center;
+         display: flex;
+         justify-content: center;
+         color: rgb(255, 255, 255);
+        }
+        #java
+        {
+            background-color: rgb(0, 0, 0);
+            display:flex;
+            margin-top: 10px;
+            margin-left: 200px;
+            width: 300px;
+            justify-content: space-around;
+        }
+        button
+        {
+            font-size: medium;
+            border-radius: 12px;
+            font-family: cursive;
+            padding:5px 10px 5px 10px;
+            color: white;
+        }
+        #b1
+        {
+            background-color: red;
+
+        }
+        #b2
+        {
+            background-color: blue;
+
+        }
+        #b3
+        {
+            background-color: green;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div id="dis">0</div>
+    <div id="java">
+        <button id="b1" onclick="d()">decrement</button>
+        <button id="b2" onclick="r()">reset</button>
+        <button id="b3" onclick="i()">increment</button>
+        <script>
+        
+        function i() {
+           
+            var a=document.getElementById("dis").innerText;
+           
+            a=parseInt(a)+1;
+            
+            document.getElementById("dis").innerHTML=a;
+       
+        }
+        function r()
+        {
+            var a=0;
+            document.getElementById("dis").innerHTML=a;
+        }
+        function d(){
+            var a=document.getElementById("dis").innerText;
+           
+            a=parseInt(a)-1;
+            
+            document.getElementById("dis").innerHTML=a;
+        }
+
+        </script>
+</body>
+</html>
