@@ -27,9 +27,9 @@ body{
 }
 table
 {
-    margin:200px 0 0 80px;
+    margin:200px 0 0 60px;
     height: 120px;
-    width: 600px;
+    width: 500px;
     font-size: 2.5rem;
     font-family: cursive;
     border: 10px solid black;
@@ -102,9 +102,10 @@ table
 {
     background-color: #ffffc7;
     height: 16vh;
+
     border: none;
     border-radius: 1rem;
-    width: 18vh;
+    width: 16vh;
     color:#b0413e;
     font-size: 12vh;
     box-shadow: #8ecae6;
