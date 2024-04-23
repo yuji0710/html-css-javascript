@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    #bor
+    {
+        margin-top: 100px;
+        margin-left: 560px;
+        height: 400px;
+        width: 250px;
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    #display
+    {   
+        height: 50px;
+        text-align: right;
+        font-size: 40px;
+        display: flex;
+        background-color: rgb(27, 33, 33);
+        font-family: cursive;
+        width: 100%;
+        border: none;
+        color: white;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+
+    }
+
+    #ma
+    {
+        height: 300px;
+        margin-top: 10px;
+        width:100%;
+        background-color: rgb(12, 13, 13);
+        display: grid;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding-top: 5px;
+    
+    }
+    #back
+    {
+        padding-top: 7px;
+    }
+    .y
+    {
+        background-color: rgb(226, 165, 60);
+        border: none;
+        color: black;
+        border-radius: 50px;
+    }
+    button
+    {
+        background-color: rgb(49, 45, 45);
+        border-radius: 50px;
+        border: none;
+        font-size: larger;
+        color: white;
+        margin: 4px 4px 4px 4px;
+    }
+    button:hover
+    {
+        background-color:rgb(102, 102, 102);
+        cursor: pointer;
+    }
+    button:active
+    {
+        background-color: rgb(26, 23, 23);
+    }
+    </style>
+
+</head>
+<body >
+    <div id="bor"> 
+            <input type="text" id="display" readonly >
+            <div id="ma">
+               <button id="C" onclick="c()" class="y" >C</button>
+               <button  id="per" class="y" onclick="pers()" >%</button>
+               <button id="ba" onclick="bab()" class="y" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  id="back" fill="currentColor" class="bi bi-backspace" viewBox="0 0 16 16">
+                <path d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z"/>
+                <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
+              </svg></button>
+               <button id="diva" onclick="divd()" class="y" >/</button>
+               <button id="seven" onclick="seven7()" >7</button>
+               <button id="eight"onclick="eight8()" >8</button>
+               <button id="nine" onclick="nine9()" >9</button>
+               <button  id="x" onclick="intoX()" class="y" >X</button>
+               <button id="four" onclick="four4()" >4</button>
+               <button id="five" onclick="five5()" >5</button>
+               <button id="six" onclick="six6()">6</button>
+               <button id="min" onclick="minm()" class="y" >-</button>
+               <button id="one" onclick="one1()" >1</button>
+               <button id="two" onclick="two2()">2</button>
+               <button id="three" onclick="three3()">3</button>
+               <button id="plus" onclick="plusp()" class="y" >+</button>
+               <button id="zero2" onclick="zero00()" >00</button>
+               <button id="zero" onclick="zero0()">0</button>
+               <button id="dot" onclick="dota()" >.</button>
+               <button id="equ" onclick="equa()" class="y" >=</button> 
+            </div>
+    </div>
+    <script >
+        function c()
+{
+    document.getElementById("display").value="";
+}
+function one1() {
+    var a= document.getElementById("display").value;
+    a=a+"1";
+    document.getElementById("display").value=a;
+}
+function two2() {
+    var a= document.getElementById("display").value;
+    a=a+"2";
+    document.getElementById("display").value=a;
+}function three3() {
+    var a= document.getElementById("display").value;
+    a=a+"3";
+    document.getElementById("display").value=a;
+}function four4() {
+    var a= document.getElementById("display").value;
+    a=a+"4";
+    document.getElementById("display").value=a;
+}function five5() {
+    var a= document.getElementById("display").value;
+    a=a+"5";
+    document.getElementById("display").value=a;
+}function six6() {
+    var a= document.getElementById("display").value;
+    a=a+"6";
+    document.getElementById("display").value=a;
+}function seven7() {
+    var a= document.getElementById("display").value;
+    a=a+"7";
+    document.getElementById("display").value=a;
+}function eight8() {
+    var a= document.getElementById("display").value;
+    a=a+"8";
+    document.getElementById("display").value=a;
+}function nine9() {
+    var a= document.getElementById("display").value;
+    a=a+"9";
+    document.getElementById("display").value=a;
+}function zero0() {
+    var a= document.getElementById("display").value;
+    a=a+"0";
+    document.getElementById("display").value=a;
+}function zero00() {
+    var a= document.getElementById("display").value;
+    a=a+"0"+"0";
+    document.getElementById("display").value=a;
+}
+function intoX() {
+    var a= document.getElementById("display").value;
+    a=a+"*";
+    document.getElementById("display").value=a;
+}
+function plusp() {
+    var a= document.getElementById("display").value;
+    a=a+"+";
+    document.getElementById("display").value=a;
+}
+function minm() {
+    var a= document.getElementById("display").value;
+    a=a+"-";
+    document.getElementById("display").value=a;
+}
+function divd() {
+    var a= document.getElementById("display").value;
+    a=a+"/";
+    document.getElementById("display").value=a;
+}
+function pers() {
+    var a= document.getElementById("display").value;
+    a=a+"%";
+    document.getElementById("display").value=a;
+}
+function dota() {
+    var a= document.getElementById("display").value;
+    a=a+".";
+    document.getElementById("display").value=a;
+}
+function bab()
+{
+    var a=document.getElementById("display").value;
+    var b=a.slice(0,-1);
+    document.getElementById("display").value=b;
+}
+function equa()
+{
+    const a=document.getElementById("display").value;
+    const ans=eval(a);
+    document.getElementById("display").value=ans;
+}
+
+    </script>
+</body>
+</html>
