@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(31, 25, 25);
+}
+#border
+{
+    height: 200px;
+    width:60%;
+    position: absolute;
+    background-color: rgba(55, 55, 55, 0.18);
+    top: 30%;
+    left:20%;
+    border-radius: 130px;
+    border:3px solid rgb(206, 187, 187);
+    box-shadow:1px 2px 20px white;
+    justify-content: center;
+    align-items: center;
+    
+}
+#te
+{
+    color:white;
+    padding:4% 0 0 10%;
+    font-family:cursive;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 20px rgb(200, 200, 200);
+}
+#load
+{
+    height: 20px;
+    width: 80%;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    border: none;
+    border-radius: 20px;
+    animation-name: loading ;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+    box-shadow: 10px 10px 30px red;
+}
+@keyframes loading {
+    0%
+    {
+        width: 0%;
+    }
+    25%
+    {
+        width: 20%;
+        background-color: red;
+        box-shadow: 10px 10px 30px red;
+    }
+    50%
+    {
+        width: 40% ;
+        background-color:yellow ;
+        box-shadow: 10px 10px 30px yellow;
+    }
+    75%
+    {
+        width:60% ;
+        background-color:blue ;
+        box-shadow: 10px 10px 30px blue;
+      
+    }
+    
+    100%
+    {
+        width: 80%;
+        background-color: green;
+        box-shadow: 10px 10px 30px green;
+    }
+   
+}
